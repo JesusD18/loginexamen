@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fdf4; /* verde muy claro */
+    color: #2e7d32; /* verde oscuro para texto */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #1b5e20; /* verde más profundo para encabezado */
+}
+
+table {
+    width: 60%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background: #e8f5e9; /* fondo verde claro */
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(46, 125, 50, 0.2); /* sombra verde tenue */
+    font-size: 12px;
+}
+
+th, td {
+    border: 1px solid #c8e6c9; /* borde verde claro */
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    background-color: #a5d6a7; /* verde medio para encabezados */
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+tr:nth-child(even) {
+    background-color: #dcedc8; /* verde claro para filas pares */
+}
+
+tr:hover {
+    background-color: #c5e1a5; /* verde más vivo al pasar el mouse */
+}
+
+button {
+    border: none;
+    padding: 5px 10px;
+    margin: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:first-child {
+    background-color: #388e3c; /* verde principal */
+    color: white;
+}
+
+button:last-child {
+    background-color: #66bb6a; /* verde más claro */
+    color: white;
+}

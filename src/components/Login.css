@@ -1,0 +1,116 @@
+/* Contenedor del formulario */
+.form-container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 50px;
+    border: 1px solid #a0d6b4;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 100, 0, 0.1);
+    text-align: center;
+    background-color: #e9f7ef;
+    animation: fadeIn 0.8s ease-in-out;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c8e6c9;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background-color: #f1f8e9;
+}
+
+/* Enfocar input */
+input:focus {
+    border-color: #66bb6a;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.6);
+    outline: none;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #43a047;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover botón */
+button:hover {
+    background-color: #2e7d32;
+}
+
+/* Párrafo debajo del formulario */
+p {
+    margin-top: 15px;
+    color: #388e3c;
+}
+
+/* Enlace de registro */
+span {
+    font-weight: bold;
+    color: #1b5e20;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover enlace */
+span:hover {
+    color: #004d40;
+}
+
+/* Animación fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor de contraseña */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    padding-right: 35px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #388e3c;
+    cursor: pointer;
+}
