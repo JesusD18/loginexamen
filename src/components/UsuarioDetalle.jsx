@@ -36,7 +36,7 @@ const UsuarioList = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get("http://44.211.247.240/users/usuarios", {
+        axios.get("https://44.211.247.240/users/usuarios", {
             headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
         })
         .then(response => {
@@ -46,7 +46,7 @@ const UsuarioList = () => {
     }, []);
 
     const mostrarDetalleUsuario = (id) => {
-        axios.get(`http://44.211.247.240/users/usuario/${id}`, {
+        axios.get(`https://44.211.247.240/users/usuario/${id}`, {
             headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
         })
         .then(response => {

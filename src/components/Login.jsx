@@ -50,7 +50,7 @@ const Login = () => {
         setLoading(true);
         setError("");
         
-        axios.post("http://44.211.247.240/users/login", usuario, {
+        axios.post("https://44.211.247.240/users/login", usuario, {
             headers: { "Content-Type": "application/json" }
         })
         .then(response => {

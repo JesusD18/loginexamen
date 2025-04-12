@@ -18,7 +18,7 @@ const UsuarioEdit = () => {
     const [message, setMessage] = useState("");
 
     useEffect(() => {
-        axios.get(`http://44.211.247.240/users/usuario/${id}`)
+        axios.get(`https://44.211.247.240/users/usuario/${id}`)
             .then(response => {
                 console.log("Datos recibidos:", response.data);
                 setUsuario(response.data);
@@ -39,7 +39,7 @@ const UsuarioEdit = () => {
         setIsUpdating(true);
         setMessage("Actualizando usuario...");
 
-        axios.put(`http://44.211.247.240/users/actualizarusuario/${id}`, usuario)
+        axios.put(`https://44.211.247.240/users/actualizarusuario/${id}`, usuario)
             .then(response => {
                 console.log("Respuesta del servidor:", response.data);
                 setMessage("Actualización exitosa. Redirigiendo...");
